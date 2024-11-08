@@ -76,10 +76,10 @@ data_frame = pd.DataFrame(data = d, index = ['nutritional value', 'popularity', 
 print(data_frame)
 
 #dataframe analysis
-nutrition_min = min(nutritional_values) +1
+nutrition_min = min(nutritional_values)
 popularity_min = min(food_popularity)
 reviews_min = min(reviews)
-time_min = min(prep_times)
+time_min = 53 - max(prep_times)
 
 nutritional_result = []
 popularity_result = []
@@ -88,9 +88,10 @@ time_result = []
 
 i = 0
 for value in nutritional_values:
-	value = value +1
-	nutritional_values[i] = value
-	nutritional_result.append(value/nutrition_min)
+	result_value = value/nutrition_min
+	if result_value != 1:
+			result_value = result_value/12.2767596
+	nutritional_result.append(result_value)
 	i = i+1
 
 
@@ -98,7 +99,7 @@ i = 0
 for value in food_popularity:
 	result_value = value/popularity_min
 	if result_value != 1:
-		result_value = result_value/2
+		result_value = result_value /1.1464788
 	popularity_result.append(result_value)
 	i+= 1
 
@@ -109,7 +110,8 @@ for value in reviews:
 
 i = 0
 for value in prep_times:
-	time_result.append(3 - value/time_min)
+	value = 53 - value
+	time_result.append(value/time_min)
 	i+= 1
 
 
