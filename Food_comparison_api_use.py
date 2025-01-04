@@ -1,3 +1,5 @@
+
+
 # The medium article associated with this code is here: https://medium.com/inst414-data-science-tech/pancakes-french-toast-or-waffles-which-is-the-best-7c82e146a0b7
 
 
