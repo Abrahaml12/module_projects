@@ -1,3 +1,8 @@
+
+
+# The medium article associated with this code is here: https://medium.com/inst414-data-science-tech/are-the-top-songs-on-spotify-similar-29e40105de12
+
+
 import pandas as pd
 from sklearn.metrics import pairwise_distances
 from sklearn.preprocessing import normalize
