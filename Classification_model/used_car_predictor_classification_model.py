@@ -1,3 +1,8 @@
+
+
+# The medium article associated with this code is here: https://medium.com/inst414-data-science-tech/predicting-a-vehicle-based-on-its-properties-6f35f271a7aa
+
+
 import pandas as pd
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.model_selection import train_test_split
