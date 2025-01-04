@@ -1,3 +1,8 @@
+
+
+# The medium article associated with this code is here: https://medium.com/inst414-data-science-tech/networking-champions-league-finalists-1e187d26c3ae
+
+
 import pandas as pd
 import networkx as nx
 import matplotlib.pyplot as plt
